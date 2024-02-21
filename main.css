@@ -1,0 +1,52 @@
+   .visually-hidden { 
+    /* Contain text within 1px box */
+    height: 1px; 
+    overflow: hidden;
+    width: 1px;
+    /* Keep the layout */  
+    position: absolute;
+    /* Remove any visible trace (e.g. background color) */
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); 
+    /* browsers in the future */
+    /* Prevent the screen reader to skip spaces between words */
+    white-space: nowrap;
+  }  
+   body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+input:checked+.switch-lebel{
+    background-color:#02CB4E;
+}
+input:checked+.switch-lebel{
+    padding-left: 32.5px;
+}
+.switch-lebel{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color:#ccc;
+    border-radius: 30px;
+    padding: 2.5px;
+    transition: all 0.5s ease-in-out  ;
+}
+
+.switch-span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out  ;
+}
+ 
